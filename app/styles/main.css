@@ -7,8 +7,7 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -22,6 +21,7 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
+  background: black; 
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -87,3 +87,163 @@ body {
     border-bottom: 0;
   }
 }
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+.navbar-default {
+  background-color: #039be5 ;
+  /* #07405d */
+  border-color: #039be5 ;
+  /*  #211e4d */
+  /* Change for a full screen navbar */
+  /* DONT COLLAPSE WITH THAT position: absolute; */
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0 8px 8px -6px #b4b4b4;
+  -moz-box-shadow: 0 8px 8px -6px #b4b4b4;
+  box-shadow: 0 8px 8px -6px #b4b4b4;
+  font-family: Open Sans ;
+
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #24b8eb;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #24b8eb;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #24b8eb;
+  background-color: #211e4d;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #24b8eb;
+  background-color: #211e4d;
+}
+.navbar-default .navbar-toggle {
+  border-color: #211e4d;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #211e4d;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #24b8eb;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #24b8eb;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #24b8eb;
+    background-color: #211e4d;
+  }
+}
+
+.onbottom{
+  background-color: #027cb7;
+  color: #cccccc;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  font-family: Open Sans ;
+
+}
+
+
+.menusx {
+  
+  padding-top: 150px;
+  }
+
